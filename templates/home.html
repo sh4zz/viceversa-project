@@ -1,8 +1,52 @@
-<h1>Vice Versa</h1>
-<form action="{% url 'reverse' %}">
-	<textarea name="usertext" rows="10" cols="50"></textarea>
-	<br />
-	<br />
-	<input type="submit" value="Reverse!">
-	<hr />
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reversed text</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+			color: white;
+			background: black;
+		}
+		h1 {
+			margin-left: 550px
+		}
+		textarea {
+			margin-left: 450px;
+			background: grey;
+			color: lime;
+			border: dotted 3px lime;
+		}
+		input {
+			margin-left: 600px;
+			color: lime;
+			background: grey;
+			border: solid 2px lime;
+			border-radius: 5px
+		}
+		p {
+			border-left-style: solid;
+			border-left-color: lime;
+			border-left-width: 5px;
+			padding-left: 5px;
+		}
+	</style>
+</head>
+<body>
+	<h1>
+		Vice Versa
+	</h1>
+	<form action="{% url 'reverse' %}">
+		<textarea name="usertext" rows="10" cols="50"></textarea>
+		<br />
+		<br />
+		<input type="submit" value="Reverse!">
+		<hr />
+		<br />
+	</form>
+	<p>
+		Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit laboriosam doloribus dolorem? Quod fugiat ullam unde incidunt ut sunt, consectetur blanditiis delectus iste provident obcaecati fugit quisquam voluptate aut voluptatum!
+	</p>
+</body>
+</html>
